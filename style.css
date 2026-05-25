@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    /* Mantenemos tus colores exactos */
+    --hb-actitud: #2C3333;
+    --hb-fortaleza: #395B64;
+    --hb-mentalidad: #A5C9CA;
+    --hb-atencion: #E7F6F2;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--hb-actitud);
+    color: var(--hb-atencion);
+}
+
+h1, h2, h3, h4, h5, h6, .navbar-brand, .font-brand {
+    font-family: 'Fredoka', sans-serif;
+    letter-spacing: -0.5px;
+}
+
+/* Clases de utilidad de colores */
+.bg-hb-actitud { background-color: var(--hb-actitud) !important; }
+.bg-hb-fortaleza { background-color: var(--hb-fortaleza) !important; }
+.bg-hb-mentalidad { background-color: var(--hb-mentalidad) !important; }
+.bg-hb-atencion { background-color: var(--hb-atencion) !important; }
+
+.text-hb-actitud { color: var(--hb-actitud) !important; }
+.text-hb-fortaleza { color: var(--hb-fortaleza) !important; }
+.text-hb-mentalidad { color: var(--hb-mentalidad) !important; }
+.text-hb-atencion { color: var(--hb-atencion) !important; }
+
+.border-hb-fortaleza { border-color: var(--hb-fortaleza) !important; }
+.border-hb-mentalidad { border-color: var(--hb-mentalidad) !important; }
+
+/* Animaciones y Hover */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border: 1px solid transparent;
+}
+
+.hover-effect:hover {
+    border-color: var(--hb-mentalidad) !important;
+    transform: translateY(-5px);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+}
+
+.hover-effect-text {
+    transition: color 0.3s ease, padding-left 0.3s ease;
+}
+
+.hover-effect-text:hover {
+    color: var(--hb-mentalidad) !important;
+    padding-left: 5px;
+}
+
+/* Ajustes menores de legibilidad */
+.tracking-wider {
+    letter-spacing: 0.1em;
+}
